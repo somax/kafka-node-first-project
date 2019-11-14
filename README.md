@@ -3,7 +3,7 @@
 
 ## build
 ```
-docker build --rm -f "Dockerfile" -t reg.scp.com/ops/minio-mc-docker:0.1.0 .
+docker build --rm -f "Dockerfile" -t somax/minio-mc-docker:0.1.0 .
 ```
 
 
@@ -17,8 +17,3 @@ docker run --rm -it \
     reg.scp.com/ops/minio-mc-docker:0.1.0 
     mc version
 ```
-
-MINIO_SERVER_NAME=test
-MINIO_SERVER_URL=http://localhost:9000
-MINIO_ACCESS_KEY=test
-MINIO_SECRET_KEY=test1234
