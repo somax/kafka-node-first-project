@@ -1,0 +1,9 @@
+version: 1.4
+
+jobs:         
+  ExampleJob:  
+    cmd: echo "date | mc pipe myminio/smx/date"     
+    time: '*/5'     
+    onError: Backoff
+    notifyOnFailure:
+      - type: stdout
